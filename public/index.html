@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Watson Conversation</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/bot.css">
+</head>
+
+<body onload="userMessage('Hola');">
+    <div class="container">
+        <div class="chatbot">
+            <div id="chatBox" class="dialogContainer">
+                <p style="text-align: center; border-bottom:1px solid #DAE1E8; padding: 10px 0 15px">Bienvenido al servicio de Chat de Bancolombia</p>
+            </div>
+
+        </div>
+        <!-- End class chatbot -->
+        <div class="bot-input">
+            <input type="text" id="chatMessage" class="dialogInput" placeholder="Envia tu mensaje" onkeypress="return newEvent(event)">
+            <input type="button" class="bot-button-send" value="Enviar">
+        </div>
+    </div>
+    <!-- End class container -->
+</body>
+<script src="src/bot.js"></script>
+
+</html>

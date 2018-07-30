@@ -1,0 +1,224 @@
+/* Styling for the chat bot */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+body{
+    height: 100vh;
+    position: absolute;
+}
+
+.dialogContainer {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    width: 100%;
+    height: 290px;
+    max-height: 420px;
+    margin: 0;
+    padding: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.dialogInput {
+    width: 80%;
+    margin-top: 15px;
+    margin: 5px;
+    padding: 5px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 17px;
+    border: 1px solid #DAE1E8;
+    margin-left: 32px;
+    border-radius: 3px;
+
+}
+::placeholder{
+    color: #DAE1E8;
+}
+
+    
+.message, .menu-content-bot {
+    margin-top: 0.5em;
+    color: #fff;
+    line-height: 18px;
+}
+
+.bot-input{
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #DAE1E8 !important;
+
+    margin-bottom: 5px;
+}
+
+.bot-button-send{
+  width: 20%!important;
+  margin: 5px 10px!important;
+  padding: 0 10px!important;
+  background-color: #ffd200!important;
+  color: #000!important;
+  font-weight: bolder!important;
+  border: none!important;
+  border-radius: 5px!important;
+  font-size: .8rem!important;
+  display: block!important;
+}
+
+.chatbot{
+    margin-bottom: 5px;
+}
+.systemMessage{
+    color: #bfbfbf;
+    text-align: center;
+}
+.bot {
+    padding: 0.5em;
+    background-color: #F2F4F7;
+    margin-right: 0.5em;
+    margin-left: 30%;
+    font-size: 12px;
+    color: #000;
+    -webkit-align-self: flex-start;
+    align-self: flex-start;
+	-webkit-animation: fadein 2s; 
+       -moz-animation: fadein 2s; 
+        -ms-animation: fadein 2s; 
+         -o-animation: fadein 2s; 
+            animation: fadein 2s;
+}
+
+.user {
+    padding: 0.5em;
+    border-radius: 5px;
+    background-color: #F2F4F7;
+    margin-left: 0.5em;
+    margin-right: 30%;
+    font-size: 15px;
+     color: #00f;
+    -webkit-align-self: flex-end;
+    align-self: flex-end;
+	-webkit-animation: fadein 1s; 
+       -moz-animation: fadein 1s;
+        -ms-animation: fadein 1s; 
+         -o-animation: fadein 1s; 
+            animation: fadein 1s;
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+.button-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.link-content-bot, .button-content-bot{
+    margin: 5px auto;
+    text-align: center;
+    background: #ffd200;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 5px 10px rgba(14, 11, 15, 0.1);
+
+}
+
+.button-content-bot{
+    background: #fff;
+    box-shadow: none;
+    padding: 0;
+}
+
+#chatBox > div.button-content-bot > p, #chatBox > div.link-content-bot > p, div.menu-content-bot > p{
+    background: #ffd200;
+    color: #000;
+}
+
+.button-content-bot > *{
+    background: #00f;
+    color: #fff;
+    border-radius: 3px;
+    margin: 10px;
+    padding: 5px 45px;
+    border: none;
+}
+.menu-content-bot{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-flow: row wrap;
+    
+}
+.link-content-bot > p:nth-child(1){
+    font-weight: bolder;
+    margin-bottom: 10px;
+    letter-spacing: 2px
+}
+
+#chatBox > div.button-content-bot > button:nth-child(2){
+    background-color: red;
+}
+
+#chatBox > div.menu-content-bot > button{
+    height: 100px;
+    margin: 5px;
+    width: 25%;
+    box-shadow: 5px 10px rgba(14, 11, 15, 0.1);
+    border-radius: 5px;
+    border: none;
+    font-weight: bolder;
+    padding: 5px;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+
+}
+
+
+#chatBox > div.menu-content-bot > button:nth-child(1){
+    background: #ffd200;
+}
+#chatBox > div.menu-content-bot > button:nth-child(2){
+    background: #00f;
+    color: #fff;
+    
+}
+
+#chatBox > div.menu-content-bot > button:nth-child(3){
+    background: red;
+    color: #fff;
+}
+
+#chatBox > div.menu-content-bot > button:hover{
+    background: #000;
+    color: #fff;
+}
+
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
